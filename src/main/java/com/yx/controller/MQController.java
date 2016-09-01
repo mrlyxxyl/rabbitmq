@@ -16,7 +16,7 @@ public class MQController {
     @Resource
     private MQProducer mqProducer;
 
-    @RequestMapping(value = "test")
+    @RequestMapping(value = "com/yx/test")
     @ResponseBody
     public Map<String, Object> test() {
         mqProducer.sendDataToQueue("queue_one", "queue_one_value");

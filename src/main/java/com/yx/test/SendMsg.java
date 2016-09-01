@@ -1,14 +1,14 @@
-package test; /**
- * User: LiWenC
- * Date: 16-9-1
- */
-
+package com.yx.test;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 import java.util.concurrent.TimeoutException;
 
+/**发送队列消息
+ * User: LiWenC
+ * Date: 16-9-1
+ */
 public class SendMsg {
     //队列名称
     private final static String QUEUE_NAME = "queue_one";
